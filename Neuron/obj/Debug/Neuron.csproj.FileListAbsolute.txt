@@ -1,0 +1,12 @@
+c:\users\brand\documents\visual studio 2017\Projects\Neuron\Neuron\bin\Debug\Neuron.exe.config
+c:\users\brand\documents\visual studio 2017\Projects\Neuron\Neuron\bin\Debug\Neuron.exe
+c:\users\brand\documents\visual studio 2017\Projects\Neuron\Neuron\bin\Debug\Neuron.pdb
+c:\users\brand\documents\visual studio 2017\Projects\Neuron\Neuron\obj\Debug\Neuron.csprojResolveAssemblyReference.cache
+c:\users\brand\documents\visual studio 2017\Projects\Neuron\Neuron\obj\Debug\Neuron.exe
+c:\users\brand\documents\visual studio 2017\Projects\Neuron\Neuron\obj\Debug\Neuron.pdb
+C:\Users\Admin\Desktop\Neuron-master\Neuron\bin\Debug\Neuron.exe.config
+C:\Users\Admin\Desktop\Neuron-master\Neuron\obj\Debug\Neuron.exe
+C:\Users\Admin\Desktop\Neuron-master\Neuron\obj\Debug\Neuron.pdb
+C:\Users\Admin\Desktop\Neuron-master\Neuron\bin\Debug\Neuron.exe
+C:\Users\Admin\Desktop\Neuron-master\Neuron\bin\Debug\Neuron.pdb
+C:\Users\Admin\Desktop\Neuron-master\Neuron\obj\Debug\Neuron.csprojResolveAssemblyReference.cache
