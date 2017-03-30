@@ -8,7 +8,7 @@ namespace Neuron.Program_Logic
 {
     public class ProgramLogic
     {
-        public async Task<int> Execute(List<Neuron> _web, List<double[]> _entry, List<double[]> _marks)
+        public async Task<string> Execute(List<Neuron> _web, List<double[]> _entry, List<double[]> _marks)
         {
             return await Task.Run(() =>
             {
@@ -17,16 +17,25 @@ namespace Neuron.Program_Logic
                 int count = 0;
                 int check = 0;
                 int k = 0;
+              var strb = new StringBuilder();
                 #endregion
 
                 while(work)
                 {
-                    for (int i = 0; i < 3; i++)
+                count++;
+                for (int i = 0; i < 3; i++)
+                {
+                  for (int j = 0; j < 3; j++)
+                  {
+                    strb.Append(_web[i]._weights[j]).Append("\t");
+                  }
+                  strb.AppendLine();
+                }
+                strb.AppendLine();
+                for (int i = 0; i < 3; i++)
                     {
-                        count++;
-
                         var signum = _web[i].Signum(_web[i].FunctionU(_entry.ElementAt(k).ToList()));
-
+            
                         if (_marks.ElementAt(k)[i] != signum)
                         {
                             double a = ((_marks.ElementAt(k)[i] - signum * 0.5));
@@ -38,10 +47,15 @@ namespace Neuron.Program_Logic
                             }
                         }
                         else check++;
-                        if (check == 4) work = false;
+                       //////////////////////////////////////
+                        if (check == 10) work = false;
                     }
-                }
-                return count;
+
+                //????????//////???
+                k++; if (k == 3) k = 0;
+              }
+              strb.Append(check);
+                return strb.ToString();
             });
         }
     }
